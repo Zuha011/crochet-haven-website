@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f4f1;
+    color: #4b3b32;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4b3b32;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    margin-left: 10px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #c27b62;
+}
+
+.hero {
+    background-color: #eacfc3;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #c27b62;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #a5634d;
+}
+
+.products {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4b3b32;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e8c7ba;
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.full-width-box {
+    width: 100%;
+    background-color: #e6d3c9;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.form-section {
+    padding: 40px 20px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e8c7ba;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1.5px solid #e8c7ba;
+    border-radius: 8px;
+    background-color: #f9f4f1;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #c27b62;
+    outline: none;
+}
+
+fieldset {
+    border: 1.5px solid #cfa89a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.spaced-fieldset {
+    margin-bottom: 20px;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.submit-btn {
+    background-color: #c27b62;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #a5634d;
+}
+
+.faq {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion-title {
+    display: block;
+    background-color: #c27b62;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.accordion input:checked + .accordion-title {
+    background-color: #a5634d;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 0 15px;
+    border-radius: 8px;
+    border: 1px solid #e8c7ba;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion input:checked + .accordion-title + .accordion-content {
+    max-height: 200px;
+    padding: 10px 15px;
+}
+
+.quote-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #e8c7ba;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.hidden-quote {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.quote-box:hover .hidden-quote {
+    opacity: 1;
+}
+
+.footer {
+    background-color: #4b3b32;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+@media (max-width: 900px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
